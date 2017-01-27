@@ -1,0 +1,26 @@
+Z - boolean
+I - int
+C - char
+V - void
+B - byte
+F - float
+D - double
+J - long
+S - short
+
+Smali: method([CI) Z
+Java: boolean method(char[], int);
+Ljava/lang/String;
+
+if-nez v0,  :label_name
+:label_name
+const-string v0, "v0 has a non
+  zero value."
+  
+invoke-virtual {v9}, Ljava/lang/
+  String;->trim()Ljava/lang/
+  String;
+move-result-object v9
+
+.method public onCreate(Landroid/os/Bundle;)V
+apktool b UnpackedAPK
