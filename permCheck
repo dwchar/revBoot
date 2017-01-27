@@ -1,0 +1,10 @@
+android.intent.action.MAIN
+res/values
+res/layouts
+d2j-des2jar.sh application.apk
+File->Open
+onCreate()
+unzip application-dex2jar.jar
+jad com/package/application/
+  *.class
+grep onCreate *.jad
